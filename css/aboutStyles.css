@@ -1,0 +1,107 @@
+main {
+    background-color: #dfded7;
+    padding-bottom: 10px;
+}
+.mainWrapper {
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-left: 5px solid #f0e528;
+    border-right: 5px solid #f0e528;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+main h1 {
+    margin: 0 auto;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Waiting for the Sunrise', cursive;
+}
+main h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #f0e528;
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 1.8em;
+}
+main p {
+    text-align: center;
+}
+#mission {
+    width: 80%;
+    margin: 0 auto;
+}
+.team {
+    float:left;
+    margin-left: 3.6%;
+    margin-right: 3.6%;
+    width: 26%;
+    border: 1px solid #dfded7;
+}
+.team:hover {
+    box-shadow: 1px 1px 6px #f0e528;
+}
+.team img {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 12px;
+    border: 1px solid #dfded7;
+}
+.team h3 {
+    font-family: 'Waiting for the Sunrise', cursive;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.team h4 {
+    text-align: center;
+    color: #f0e528;
+    font-size: 1em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.team p {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+@media (max-width: 1020px) {
+    .team {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 10px;
+    }
+    .team img {
+        width: 150px;
+        height: 150px;
+        float:left;
+        margin-bottom: 12px;
+    }
+}
+@media (max-width: 750px) {
+    p {
+        font-size: 0.9em;
+    }
+    .team h3 {
+        font-size: 1.2em;
+    }
+    .team h4 {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 630px) {
+    .team img {
+        display: none;
+    }
+}

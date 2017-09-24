@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feel the Balkans</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/commonStyles.css">
+    <link rel="stylesheet" href="css/indexStyles.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link href='https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideoTransitions = [
+              [{b:5500.0,d:3000.0,o:-1.0,r:240.0,e:{r:2.0}}],
+              [{b:-1.0,d:1.0,o:-1.0,c:{x:51.0,t:-51.0}},{b:0.0,d:1000.0,o:1.0,c:{x:-51.0,t:51.0},e:{o:7.0,c:{x:7.0,t:7.0}}}],
+              [{b:-1.0,d:1.0,o:-1.0,sX:9.0,sY:9.0},{b:1000.0,d:1000.0,o:1.0,sX:-9.0,sY:-9.0,e:{sX:2.0,sY:2.0}}],
+              [{b:-1.0,d:1.0,o:-1.0,r:-180.0,sX:9.0,sY:9.0},{b:2000.0,d:1000.0,o:1.0,r:180.0,sX:-9.0,sY:-9.0,e:{r:2.0,sX:2.0,sY:2.0}}],
+              [{b:-1.0,d:1.0,o:-1.0},{b:3000.0,d:2000.0,y:180.0,o:1.0,e:{y:16.0}}],
+              [{b:-1.0,d:1.0,o:-1.0,r:-150.0},{b:7500.0,d:1600.0,o:1.0,r:150.0,e:{r:3.0}}],
+              [{b:10000.0,d:2000.0,x:-379.0,e:{x:7.0}}],
+              [{b:10000.0,d:2000.0,x:-379.0,e:{x:7.0}}],
+              [{b:-1.0,d:1.0,o:-1.0,r:288.0,sX:9.0,sY:9.0},{b:9100.0,d:900.0,x:-1400.0,y:-660.0,o:1.0,r:-288.0,sX:-9.0,sY:-9.0,e:{r:6.0}},{b:10000.0,d:1600.0,x:-200.0,o:-1.0,e:{x:16.0}}]
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+        });
+    </script>
+    <style>
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+    </style>
+</head>
+<body style="padding:0px; margin:0px; background-color:#fff;">
+<div id="wrapper">
+<header>
+    <div class="head">
+        <div id="contacts">
+            <img id="phone" src="img/phone.png" alt="phone icon">
+            <p>+359 888 700 800</p>
+        </div>
+        <div id="socialMedia">
+             <a href="#"><img src="img/Social media/fb.png" alt="fb"></a>
+             <a href="#"><img src="img/Social media/twitter.png" alt="twitter"></a>
+             <a href="#"><img src="img/Social media/whatsapp.png" alt="whatsapp"></a>
+             <a href="#"><img src="img/Social media/instagram.png" alt="instagram"></a>
+         </div>
+    </div>
+    <div id="nav">
+        <div id="logo">
+            <a href="index.html"><img src="img/logo-new.png" alt="logo"></a>
+        </div>
+            <div id="nav-container">
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Cuisine</a></li>
+                    <li id="diff"><a href="aboutUs.html">About</a></li>
+                    <li><a href="contactUs.html">Contact us</a></li>
+                </ul>
+            </div>
+    </div>
+</header>
+    <!-- #region Jssor Slider Begin -->
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/Makarska.jpg" />
+                <div style="position: absolute; top: 30px; left: 30px; width: 480px; height: 120px; font-size: 50px; color: #271c95; line-height: 60px; font-family: 'Waiting for the Sunrise', cursive; font-weight: bold; font-size: 4.5em; ">Makarska - discover it now</div>
+                <div data-u="caption" data-t="5" style="position: absolute; top: 120px; left: 650px; width: 470px; height: 220px;">
+                    <div style="position: absolute; top: 4px; left: 45px; width: 379px; height: 213px; overflow: hidden;">
+                    </div>
+                </div>
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/Pula.jpg" />
+                 <div style="position: absolute; top: 30px; left: 30px; width: 600px; height: 120px; font-size: 50px; color: #fff; line-height: 60px; font-family: 'Waiting for the Sunrise', cursive; font-weight: bold; font-size: 4.5em;">Pula - feel the Italian scent in Croatia</div>
+                  <div data-u="caption" data-t="5" style="position: absolute; top: 120px; left: 650px; width: 470px; height: 220px;">
+                    <div style="position: absolute; top: 4px; left: 45px; width: 379px; height: 213px; overflow: hidden;">
+                    </div>
+                </div>
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/Bucharest.jpg" />
+                <div style="position: absolute; top: 30px; left: 30px; width: 800px; height: 120px; font-size: 50px; color: #f0e528; line-height: 60px; font-family: 'Waiting for the Sunrise', cursive; font-weight: bold; font-size: 4.5em;">48 hours in... Bucharest</div>
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <a href="http://www.jssor.com" style="display:none">Bootstrap Carousel</a>
+    </div>
+    <!-- #endregion Jssor Slider End -->
+<div id="trips" class="clearfix">
+    <h3 class="smallHeading" id="noMargin">Take a look at our</h3>
+    <h2 class="firstRow">Most popular tours</h2>
+    <div class="topTrip">
+        <img src="img/belogradchik.jpg" alt="belogradchik">
+        <a href="#"><h4>Bulgaria - The Pearl of the Balkans</h4></a>
+        <div class="tripDescription clearfix">
+            <div><p>7 days</p></div>
+            <div><p>5 cities</p></div>
+            <div><a href="#">Book now!</a></div>
+        </div>
+    </div>
+    <div class="topTrip">
+        <img src="img/dubrovnik.jpg" alt="Dubrovnik">
+        <a href="#"><h4>Dubrovnik and Surrounding Islands</h4></a>
+        <div class="tripDescription clearfix">
+            <div><p>4 days</p></div>
+            <div><p>3 cities</p></div>
+            <div><a href="#">Book now!</a></div>
+        </div>
+    </div>
+    <div class="topTrip">
+        <img src="img/mecavnik.jpg" alt="Mecavnik">
+        <a href="#"><h4>Emir Kosturica's Mecavnik</h4></a>
+        <div class="tripDescription clearfix">
+            <div><p>3 days</p></div>
+            <div><p>2 cities</p></div>
+            <div><a href="#">Book now!</a></div>
+        </div>
+    </div>
+</div>
+<div id="sectionTwo" class="clearfix">
+    <div id="topDestination">
+        <h3 class="smallHeading">Explore</h3>
+        <a href="#"><h2 class="firstRow">This week's</h2></a>
+        <a href="#"><h2 class="secondRow">top destination</h2></a>
+        <img id="separatorOne" src="img/Separator.jpg" alt="Separator">
+        <a href="#"><img id="zakynthos" src="img/Zakynthos.jpg" alt="Zakynthos"></a>
+    </div>
+    <div id="blog">
+        <h3 class="smallHeading">Read</h3>
+        <a href="#"><h2 class="firstRow">Our most recent</h2></a>
+        <a href="#"><h2 class="secondRow">blog posts</h2></a>
+        <img id="separatorTwo" src="img/Separator.jpg" alt="Separator">
+        <h4>January 2016</h4>
+        <a href="#"><h5>Is it time to plan your summer vacation?</h5></a>
+        <p>Now that the winter holidays are over, the time has come to think of your summer vacation. In this article we have highlighted some of the best summer  destinations, no matter whether you want to sightsee, are a fan of water sports, or just want to take a rest at the sea shore...</p>
+        <h4>November 2015</h4>
+        <a href="#"><h5>Best New Year Destinations on the Balkans</h5></a>
+        <p>It is November, and you still have no plans for New Year’s eve? We are here to help! Best last minute offers are here!</p>
+    </div>
+ </div>
+ <div id="footer">
+    <div id="footerLogo" class="clearfix">
+        <a href="index.html"><img src="img/logo-vertical.png" alt="logo"></a>
+        <ul>
+            <li>&#169; Feel the Balkans 2016</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+    </div>
+    <div id="footerMenu">
+        <div class="menuColumn">
+            <h4>Site Map</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Cuisine</a></li>
+            </ul>
+        </div>
+        <div class="menuColumn">
+            <h4>Learn More</h4>
+            <ul>
+                <li><a href="#">Take a tour</a></li>
+                <li><a href="#">The Balkans</a></li>
+            </ul>
+        </div>
+        <div class="menuColumn">
+            <h4>The Company</h4>
+            <ul>
+                <li><a href="aboutUs.html">About</a></li>
+                <li><a href="contactUs.html">Contact us</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Corporate Clients</a></li>
+            </ul>
+        </div>   
+    </div> 
+</div>  
+</div>     
+    <script>
+    $(function(){
+        $('#menu').slicknav({
+        prependTo:'#nav-container',
+        closeOnClick:'true'
+});
+});
+    </script>
+</body>
+</html>

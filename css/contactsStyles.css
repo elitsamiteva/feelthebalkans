@@ -1,0 +1,172 @@
+body, div, p, img, ul, li, a {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#main {
+       background-color: #dfded7; 
+}
+h1 {
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+#contactUs {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 5px;
+    margin-bottom: 40px;
+    background-color: white;
+    border-left: 5px solid #f0e528;
+    border-right: 5px solid #f0e528;
+}
+#address, #contactDetails, #locationImg {
+    float: left;
+}
+#address, #contactDetails {
+    width: 38%;
+}
+#locationImg {
+    width: 24%;
+}
+#locationImg img{
+    max-width: 100%;
+    margin-top: -20px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+#contactUs h3 {
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 1.8em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 20px;
+}
+#address p {
+    margin-left: 20px;
+    margin-bottom: 12px; 
+}
+#contactDetails p {
+    margin-bottom: 12px;
+    padding-left: 25px;  
+}
+#contactDetails a {
+    color: #f0e528;
+    margin-bottom: 12px;
+    padding-left: 15px;  
+    text-decoration: none;
+}
+
+#contactDetails img {
+    float: left;
+}
+form, #map {
+    float: left;
+}
+#formMap {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+#map {
+    width: 50%;
+    height: 400px;
+      }
+form {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.form-control {
+    font-size: 1em;
+    height: 35px;
+    color: #655512;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    width: 45%;
+    margin-bottom: 10px;
+}
+textarea {
+    width: 94%;
+    height: 200px;
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.form-control:focus, textarea:focus {
+    border-color: #f0e528;
+    outline: 0;
+}
+.checkbox {
+    display: block;
+    font-size: 0.9em;
+}
+input[type="submit"] {
+    background-color: white;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #655512 
+}
+input[type="submit"]:focus {
+    border-color: #f0e528;
+    outline: 0;
+}
+@media (max-width: 1220px) {
+    form, #map {
+        width: 100%
+    }
+    .form-control {
+    width: 98%;
+}
+textarea {
+    width: 98%;
+}
+@media (max-width: 1120px) {
+    #contactUs, #formMap {
+        width: 80%;
+    }
+}
+@media (max-width: 850px) {
+    #address, #contactDetails {
+        width: 50%;
+    }
+    #locationImg {
+        display: none;
+    }
+    }
+@media (max-width: 742px) {
+    #contactUs, #formMap {
+        width:90%;
+    }
+    }   
+@media (max-width: 575px) {
+    #contactUs {
+        width:100%;
+    }
+    #formMap {
+        width: 98%
+    }
+    }

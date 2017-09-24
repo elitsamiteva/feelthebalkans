@@ -1,0 +1,207 @@
+main, #sidebar {
+    float: left;
+}
+main {
+    width: 75%;
+    background-color: #dfded7;
+}
+#sidebar {
+    width: 25%;
+}
+h1 {
+    font-family: 'Waiting for the Sunrise', cursive;
+    text-align: center;
+    font-size: 2.2em;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.countries {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 10px;
+    background-color: white;
+    border-left: 5px solid #f0e528;
+    border-right: 5px solid #f0e528;
+}
+.countries h2 {
+    font-family: 'Waiting for the Sunrise', cursive;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.country {
+    float: left;
+    width: 30.8%;
+    margin-left: 1.16%;
+    margin-right: 1.16%;
+    margin-bottom: 10px;
+    border: 1px solid #dfded7;
+}
+.country:hover {
+    box-shadow: 1px 1px 6px #f0e528;
+}
+.country img {
+    max-width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 10px;
+}
+.country h2 {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.country a {
+    text-decoration: none;
+    color: #655512;
+}
+.country a:hover {
+    color: #f0e528;
+}
+.country p {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+}
+iframe {
+    width: 70%;
+    margin-bottom: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#seeAlso {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#sidebar h3 {
+    color: #f0e528
+}
+#sidebar h4 {
+   font-family: 'Waiting for the Sunrise', cursive; 
+   font-size: 1.4em;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.roundTrip {
+    border: 1px solid #655512;
+    margin-bottom: 10px;
+}
+.roundTrip:hover {
+    border: 1px solid #f0e528;
+}
+.roundTrip img {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15px;
+}
+#seeAlso a {
+    text-decoration: none;
+    color: #655512;
+    font-style: italic;
+}
+#seeAlso a:hover {
+    text-decoration: underline;
+}
+.roundTrip h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: normal;
+}
+#partners img {
+    margin-bottom: 3px;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+    width: 65%;
+}
+
+@media (max-width: 1290px) {
+        .country {
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }    
+    .country:last-of-type {
+        margin-left: 26%;
+        margin-right: 26%;
+    }
+}
+@media (max-width: 1100px) {
+    .country p {
+        font-size: 0.8em;
+    }
+}   
+@media (max-width: 1000px) {
+        main, #sidebar {
+            width: 100%;
+    }
+        .country {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }    
+      .country:last-of-type {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+      .country img {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 35px;
+    }  
+    #sidebar {
+        background-color: #dfded7;
+    }
+    #search, #seeAlso {
+        width: 95%;
+        background-color: #fff;
+        margin: 0 auto;
+        border-left: 5px solid #f0e528;
+        border-right: 5px solid #f0e528;
+    }
+    #search {
+        padding-top: 2px;
+        padding-bottom: 20px;
+    }
+    #seeAlso {
+        margin-bottom: 10px;
+    }
+    #seeAlso h3 {
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+    .roundTrip {
+        float: left;
+        width: 45%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }  
+    #cruise {
+        margin-left: 27.5%;
+        margin-right: 27.5%;
+    }
+    #sidebar h4 {
+        font-size: 1.6em;
+        padding-left: 20px;
+    }
+    #sidebar a {
+        padding-left: 20px;
+    }
+#partners {
+    display: none;
+}
+}
